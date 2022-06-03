@@ -1,0 +1,8 @@
+﻿الحقول الغير مستخدمة
+1.EndService/نهاية خدمة
+2.SportClup/نادي رياضي
+3.CooperateBox/صندوق تعاون
+4.SolidaritySocial/تكافل إجتماعي
+5.stipendInsurance/تأمين ومعاش
+6.DeathAssist/إعانة وفاة
+7.EmpHelth/ضمان صحي

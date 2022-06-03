@@ -1,0 +1,3417 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2008/01/reportdefinition">
+  <DataSources>
+    <DataSource Name="ReportsDataSet">
+      <ConnectionProperties>
+        <DataProvider>System.Data.DataSet</DataProvider>
+        <ConnectString>/* Local Connection */</ConnectString>
+      </ConnectionProperties>
+      <rd:DataSourceID>1b0aff10-e16b-42ae-9e1b-25a4a5b4c710</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+  <DataSets>
+    <DataSet Name="DataSet1">
+      <Fields>
+        <Field Name="EmpID">
+          <DataField>EmpID</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="FinanceID">
+          <DataField>FinanceID</DataField>
+          <rd:TypeName>System.Int64</rd:TypeName>
+        </Field>
+        <Field Name="DirectorateID">
+          <DataField>DirectorateID</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="OfficeID">
+          <DataField>OfficeID</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="CenterID">
+          <DataField>CenterID</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="IsContract">
+          <DataField>IsContract</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="Fname">
+          <DataField>Fname</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Mname">
+          <DataField>Mname</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Lname">
+          <DataField>Lname</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="FullName">
+          <DataField>FullName</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="agentEmp">
+          <DataField>agentEmp</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="SlitSalary">
+          <DataField>SlitSalary</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="Allowance">
+          <DataField>Allowance</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="RepaymentFamily">
+          <DataField>RepaymentFamily</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="RF_HaveWife">
+          <DataField>RF_HaveWife</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="RF_child1">
+          <DataField>RF_child1</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="RF_child2">
+          <DataField>RF_child2</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="RF_child3">
+          <DataField>RF_child3</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="RF_OtherChild">
+          <DataField>RF_OtherChild</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="IsEngeneer">
+          <DataField>IsEngeneer</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="SpecializeID">
+          <DataField>SpecializeID</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Specialize">
+          <DataField>Specialize</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="TypeSpecializeID">
+          <DataField>TypeSpecializeID</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="TypeSpecialize">
+          <DataField>TypeSpecialize</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Authority">
+          <DataField>Authority</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="TSpecialize">
+          <DataField>TSpecialize</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="ReturnSpecialize">
+          <DataField>ReturnSpecialize</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="DangerWork">
+          <DataField>DangerWork</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="BacklogReturn">
+          <DataField>BacklogReturn</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Impulse">
+          <DataField>Impulse</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Gift">
+          <DataField>Gift</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="drive">
+          <DataField>drive</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Night">
+          <DataField>Night</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="TotalTax">
+          <DataField>TotalTax</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="SalaryTax">
+          <DataField>SalaryTax</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="BacklogRecover">
+          <DataField>BacklogRecover</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="TotalTakeOuts">
+          <DataField>TotalTakeOuts</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="IsSocialInsurance">
+          <DataField>IsSocialInsurance</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="SocialInsurance">
+          <DataField>SocialInsurance</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="IsCooperateBox">
+          <DataField>IsCooperateBox</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="CooperateBox">
+          <DataField>CooperateBox</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="ISCooperationWorkers">
+          <DataField>ISCooperationWorkers</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="CooperationWorkers">
+          <DataField>CooperationWorkers</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="IsEngCooperation">
+          <DataField>IsEngCooperation</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="EngCooperation">
+          <DataField>EngCooperation</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="IShabitation">
+          <DataField>IShabitation</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="habitation">
+          <DataField>habitation</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="habitationPerc">
+          <DataField>habitationPerc</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="IsAssistBox">
+          <DataField>IsAssistBox</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="AssistBox">
+          <DataField>AssistBox</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="IsEndService">
+          <DataField>IsEndService</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="EndService">
+          <DataField>EndService</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="AbsenceNumber">
+          <DataField>AbsenceNumber</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="absence">
+          <DataField>absence</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="IntegratorSolidarity">
+          <DataField>IntegratorSolidarity</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="IsSolidaritySocial">
+          <DataField>IsSolidaritySocial</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="SolidaritySocial">
+          <DataField>SolidaritySocial</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="SportClup">
+          <DataField>SportClup</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Incubation">
+          <DataField>Incubation</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Typo">
+          <DataField>Typo</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="IsDeathAssist">
+          <DataField>IsDeathAssist</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="DeathAssist">
+          <DataField>DeathAssist</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="HoldServiceDate">
+          <DataField>HoldServiceDate</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="HS_Total">
+          <DataField>HS_Total</DataField>
+          <rd:TypeName>System.Int64</rd:TypeName>
+        </Field>
+        <Field Name="HS_Mounths">
+          <DataField>HS_Mounths</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="HS_Discount">
+          <DataField>HS_Discount</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Datepenalty">
+          <DataField>Datepenalty</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="P_Total">
+          <DataField>P_Total</DataField>
+          <rd:TypeName>System.Int64</rd:TypeName>
+        </Field>
+        <Field Name="P_Mounths">
+          <DataField>P_Mounths</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="P_Discount">
+          <DataField>P_Discount</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="DiscountTaskDate">
+          <DataField>DiscountTaskDate</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="DT_Total">
+          <DataField>DT_Total</DataField>
+          <rd:TypeName>System.Int64</rd:TypeName>
+        </Field>
+        <Field Name="DT_Mounts">
+          <DataField>DT_Mounts</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="DT_Discount">
+          <DataField>DT_Discount</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="RodDate">
+          <DataField>RodDate</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="R_Total">
+          <DataField>R_Total</DataField>
+          <rd:TypeName>System.Int64</rd:TypeName>
+        </Field>
+        <Field Name="R_Mounths">
+          <DataField>R_Mounths</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="R_Discount">
+          <DataField>R_Discount</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="CooperationLoanDate">
+          <DataField>CooperationLoanDate</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CL_Total">
+          <DataField>CL_Total</DataField>
+          <rd:TypeName>System.Int64</rd:TypeName>
+        </Field>
+        <Field Name="CL_Mounths">
+          <DataField>CL_Mounths</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="CL_Discount">
+          <DataField>CL_Discount</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="WorkersLoanDate">
+          <DataField>WorkersLoanDate</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="WL_Total">
+          <DataField>WL_Total</DataField>
+          <rd:TypeName>System.Int64</rd:TypeName>
+        </Field>
+        <Field Name="WL_Mounts">
+          <DataField>WL_Mounts</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="WL_Discount">
+          <DataField>WL_Discount</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="EngCooperationTaxDate">
+          <DataField>EngCooperationTaxDate</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ECT_Total">
+          <DataField>ECT_Total</DataField>
+          <rd:TypeName>System.Int64</rd:TypeName>
+        </Field>
+        <Field Name="ECT_Mounts">
+          <DataField>ECT_Mounts</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="ECT_Discount">
+          <DataField>ECT_Discount</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="AkariBankDate">
+          <DataField>AkariBankDate</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="AB_Total">
+          <DataField>AB_Total</DataField>
+          <rd:TypeName>System.Int64</rd:TypeName>
+        </Field>
+        <Field Name="AB_Mounts">
+          <DataField>AB_Mounts</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="AB_Discount">
+          <DataField>AB_Discount</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="TasleefBankDate">
+          <DataField>TasleefBankDate</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="TB_Total">
+          <DataField>TB_Total</DataField>
+          <rd:TypeName>System.Int64</rd:TypeName>
+        </Field>
+        <Field Name="TB_Mounts">
+          <DataField>TB_Mounts</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="TB_Discount">
+          <DataField>TB_Discount</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="TawfeerBankDate">
+          <DataField>TawfeerBankDate</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="TWB_Total">
+          <DataField>TWB_Total</DataField>
+          <rd:TypeName>System.Int64</rd:TypeName>
+        </Field>
+        <Field Name="TWB_Mounts">
+          <DataField>TWB_Mounts</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="TWB_Discount">
+          <DataField>TWB_Discount</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="TajzahLoanDate">
+          <DataField>TajzahLoanDate</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="TL_Total">
+          <DataField>TL_Total</DataField>
+          <rd:TypeName>System.Int64</rd:TypeName>
+        </Field>
+        <Field Name="TL_Mounts">
+          <DataField>TL_Mounts</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="TL_Discount">
+          <DataField>TL_Discount</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="RecoveryDate">
+          <DataField>RecoveryDate</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="RC_Total">
+          <DataField>RC_Total</DataField>
+          <rd:TypeName>System.Int64</rd:TypeName>
+        </Field>
+        <Field Name="RC_Mounts">
+          <DataField>RC_Mounts</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="RC_Discount">
+          <DataField>RC_Discount</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="FullSalary">
+          <DataField>FullSalary</DataField>
+          <rd:TypeName>System.Int64</rd:TypeName>
+        </Field>
+        <Field Name="SumDiscounts">
+          <DataField>SumDiscounts</DataField>
+          <rd:TypeName>System.Int64</rd:TypeName>
+        </Field>
+        <Field Name="TotalSalary">
+          <DataField>TotalSalary</DataField>
+          <rd:TypeName>System.Int64</rd:TypeName>
+        </Field>
+        <Field Name="SalaryYear">
+          <DataField>SalaryYear</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="SalaryMount">
+          <DataField>SalaryMount</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="UserID">
+          <DataField>UserID</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="CreateDate">
+          <DataField>CreateDate</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="LastModify">
+          <DataField>LastModify</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="MarkNo">
+          <DataField>MarkNo</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="MarkRecord">
+          <DataField>MarkRecord</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="ControlID">
+          <DataField>ControlID</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="TaxationID">
+          <DataField>TaxationID</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="SalaryConstants">
+          <DataField>SalaryConstants</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="CardNo">
+          <DataField>CardNo</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="OldSlitSalary">
+          <DataField>OldSlitSalary</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="IsEngFarm">
+          <DataField>IsEngFarm</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="TaxFarmEng">
+          <DataField>TaxFarmEng</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="IsstipendInsurance">
+          <DataField>IsstipendInsurance</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="stipendInsurance">
+          <DataField>stipendInsurance</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="EmpHelth">
+          <DataField>EmpHelth</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="EmpCompany">
+          <DataField>EmpCompany</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Notes">
+          <DataField>Notes</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="WorkableEmp">
+          <DataField>WorkableEmp</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="CleanerTax">
+          <DataField>CleanerTax</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="STindex">
+          <DataField>STindex</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Tindex">
+          <DataField>Tindex</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="IsManager">
+          <DataField>IsManager</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="ManagerTax">
+          <DataField>ManagerTax</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="NoTax">
+          <DataField>NoTax</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="Slave_DeathAssist">
+          <DataField>Slave_DeathAssist</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Slave_AssistBox">
+          <DataField>Slave_AssistBox</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Slave_SolidaritySocial">
+          <DataField>Slave_SolidaritySocial</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="EmpClass">
+          <DataField>EmpClass</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="IsSoldur">
+          <DataField>IsSoldur</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="mutable">
+          <DataField>mutable</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="mutableClass">
+          <DataField>mutableClass</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="mutableDays">
+          <DataField>mutableDays</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="mutableCost">
+          <DataField>mutableCost</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="salarysame">
+          <DataField>salarysame</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="HealthVacationDays">
+          <DataField>HealthVacationDays</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="HealthVacationCost">
+          <DataField>HealthVacationCost</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="NoSalaryDays">
+          <DataField>NoSalaryDays</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="NoSalaryCost">
+          <DataField>NoSalaryCost</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Qhelp">
+          <DataField>Qhelp</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="retirefarmeng">
+          <DataField>retirefarmeng</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Nmanager">
+          <DataField>Nmanager</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="Amanager">
+          <DataField>Amanager</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="Pmanager">
+          <DataField>Pmanager</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="Spcar">
+          <DataField>Spcar</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="SpHouse">
+          <DataField>SpHouse</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="OverWorkValue">
+          <DataField>OverWorkValue</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="OverWorkOhr">
+          <DataField>OverWorkOhr</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="OverWorkDay">
+          <DataField>OverWorkDay</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="OverWorkNight">
+          <DataField>OverWorkNight</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="IsOverWorkOhr">
+          <DataField>IsOverWorkOhr</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="ForecTopWvalue">
+          <DataField>ForecTopWvalue</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Qhelp1">
+          <DataField>Qhelp1</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Qhelp2">
+          <DataField>Qhelp2</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="IsWorkers">
+          <DataField>IsWorkers</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="ContractSdate">
+          <DataField>ContractSdate</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="ContractEdate">
+          <DataField>ContractEdate</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="ContractAbsenc">
+          <DataField>ContractAbsenc</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="ContractAbsencVa">
+          <DataField>ContractAbsencVa</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="ContractNo">
+          <DataField>ContractNo</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Gender">
+          <DataField>Gender</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="DriveMark">
+          <DataField>DriveMark</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="DriveVication">
+          <DataField>DriveVication</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="DriveMarkValue">
+          <DataField>DriveMarkValue</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="IsDrive">
+          <DataField>IsDrive</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="IsAdministrative">
+          <DataField>IsAdministrative</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+        <Field Name="IsDelegation">
+          <DataField>IsDelegation</DataField>
+          <rd:TypeName>System.Boolean</rd:TypeName>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>ReportsDataSet</DataSourceName>
+        <CommandText>/* Local Query */</CommandText>
+      </Query>
+      <rd:DataSetInfo>
+        <rd:DataSetName>ReportsDataSet</rd:DataSetName>
+        <rd:SchemaPath>C:\Users\RAMITTA\Desktop\MyWorkLap-26-8-2017\SalaryLatProjects\SalaryLatPort\BaniasEnerg\BaniasEnergy\ReportsDataSet.xsd</rd:SchemaPath>
+        <rd:TableName>GivenSalary</rd:TableName>
+        <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
+        <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
+        <rd:TableAdapterName>GivenSalaryTableAdapter</rd:TableAdapterName>
+      </rd:DataSetInfo>
+    </DataSet>
+  </DataSets>
+  <Body>
+    <ReportItems>
+      <Textbox Name="Textbox1">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>مصرف التوفير</Value>
+                <Style>
+                  <FontSize>14pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Center</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox1</rd:DefaultName>
+        <Top>1.34428cm</Top>
+        <Left>13.5602cm</Left>
+        <Height>0.86458cm</Height>
+        <Width>4.32563cm</Width>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+          <Direction>RTL</Direction>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox2">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>فرع/مكتب: اللاذقية</Value>
+                <Style>
+                  <FontSize>14pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Center</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox1</rd:DefaultName>
+        <Top>2.3147cm</Top>
+        <Left>13.5602cm</Left>
+        <Height>0.86458cm</Height>
+        <Width>4.32563cm</Width>
+        <ZIndex>1</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+          <Direction>RTL</Direction>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox41">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>الجمهورية العربية السورية</Value>
+                <Style>
+                  <FontSize>14pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Center</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox1</rd:DefaultName>
+        <Top>0.39856cm</Top>
+        <Left>12.56314cm</Left>
+        <Height>0.86458cm</Height>
+        <Width>5.32269cm</Width>
+        <ZIndex>2</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+          <Direction>RTL</Direction>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox3">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>  نموذج رقم(3)</Value>
+                <Style>
+                  <FontSize>14pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Right</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox1</rd:DefaultName>
+        <Top>0.37387cm</Top>
+        <Left>0.61326cm</Left>
+        <Height>0.86458cm</Height>
+        <Width>4.32563cm</Width>
+        <ZIndex>3</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+          <Direction>RTL</Direction>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox4">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>إسم المقترض الثلاثي:</Value>
+                <Style>
+                  <FontSize>14pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Center</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox1</rd:DefaultName>
+        <Top>1.27373cm</Top>
+        <Left>1.56576cm</Left>
+        <Height>0.86458cm</Height>
+        <Width>5.25167cm</Width>
+        <ZIndex>4</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+          <Direction>RTL</Direction>
+        </Style>
+      </Textbox>
+      <Textbox Name="FullName">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=First(Fields!FullName.Value, "DataSet1")</Value>
+                <Style>
+                  <FontSize>14pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Center</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>FullName</rd:DefaultName>
+        <Top>2.3147cm</Top>
+        <Left>0.93076cm</Left>
+        <Height>0.86458cm</Height>
+        <Width>6.28354cm</Width>
+        <ZIndex>5</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <BottomBorder>
+            <Style>Dotted</Style>
+          </BottomBorder>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox5">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>  رقم الطلب :.................................</Value>
+                <Style>
+                  <FontSize>14pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Center</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox1</rd:DefaultName>
+        <Top>3.28511cm</Top>
+        <Left>10.3852cm</Left>
+        <Height>0.86458cm</Height>
+        <Width>7.50063cm</Width>
+        <ZIndex>6</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+          <Direction>RTL</Direction>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox6">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>  تاريخ الطلب :...............................</Value>
+                <Style>
+                  <FontSize>14pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Center</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox1</rd:DefaultName>
+        <Top>4.32608cm</Top>
+        <Left>10.3852cm</Left>
+        <Height>0.86458cm</Height>
+        <Width>7.50063cm</Width>
+        <ZIndex>7</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+          <Direction>RTL</Direction>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox7">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>بيان راتب مقترض</Value>
+                <Style>
+                  <FontSize>14pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                  <TextDecoration>None</TextDecoration>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Center</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox1</rd:DefaultName>
+        <Top>5.3224cm</Top>
+        <Left>6.30385cm</Left>
+        <Height>0.86458cm</Height>
+        <Width>4.32563cm</Width>
+        <ZIndex>8</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <BottomBorder>
+            <Style>Solid</Style>
+          </BottomBorder>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+          <Direction>RTL</Direction>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox8">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>  إن السيد: </Value>
+                <Style>
+                  <FontSize>14pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Right</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox1</rd:DefaultName>
+        <Top>6.25902cm</Top>
+        <Left>15.82031cm</Left>
+        <Height>0.86458cm</Height>
+        <Width>2.06552cm</Width>
+        <ZIndex>9</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+          <Direction>RTL</Direction>
+        </Style>
+      </Textbox>
+      <Textbox Name="FullName2">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=First(Fields!FullName.Value, "DataSet1")</Value>
+                <Style>
+                  <FontSize>14pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Center</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>FullName</rd:DefaultName>
+        <Top>6.28576cm</Top>
+        <Left>9.53677cm</Left>
+        <Height>0.86458cm</Height>
+        <Width>6.28354cm</Width>
+        <ZIndex>10</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <BottomBorder>
+            <Style>Dotted</Style>
+          </BottomBorder>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox9">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>  يعمل في مؤسسة/شركة/وزارة:   شركة مرفأ اللاذقية</Value>
+                <Style>
+                  <FontSize>14pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Right</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox1</rd:DefaultName>
+        <Top>6.28576cm</Top>
+        <Left>0.64177cm</Left>
+        <Height>0.86458cm</Height>
+        <Width>8.82444cm</Width>
+        <ZIndex>11</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+          <Direction>RTL</Direction>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox10">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>   بصفة ...........................</Value>
+                <Style>
+                  <FontSize>14pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Right</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox1</rd:DefaultName>
+        <Top>7.29999cm</Top>
+        <Left>11.95979cm</Left>
+        <Height>0.86458cm</Height>
+        <Width>5.92604cm</Width>
+        <ZIndex>12</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+          <Direction>RTL</Direction>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox11">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>دائم منذ تاريخ    /      /        ولايزال على رأس عملة لغاية تاريخة</Value>
+                <Style>
+                  <FontSize>14pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Right</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox1</rd:DefaultName>
+        <Top>7.29999cm</Top>
+        <Left>0.64177cm</Left>
+        <Height>0.86458cm</Height>
+        <Width>11.17691cm</Width>
+        <ZIndex>13</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+          <Direction>RTL</Direction>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox12">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>  وإن مركز عملة في محافظة / المدينة ........................................................</Value>
+                <Style>
+                  <FontSize>14pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Center</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox1</rd:DefaultName>
+        <Top>8.34096cm</Top>
+        <Left>2.89602cm</Left>
+        <Height>0.86458cm</Height>
+        <Width>15.49781cm</Width>
+        <ZIndex>14</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+          <Direction>RTL</Direction>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox13">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>  رقم الهاتف / الفاكس ...........................................................................</Value>
+                <Style>
+                  <FontSize>14pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Center</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox1</rd:DefaultName>
+        <Top>9.31138cm</Top>
+        <Left>2.89602cm</Left>
+        <Height>0.86458cm</Height>
+        <Width>15.49781cm</Width>
+        <ZIndex>15</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+          <Direction>RTL</Direction>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox14">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>  ومشترك بالتأمينات تحت رقم /......................./ منذ تاريخ /........................./</Value>
+                <Style>
+                  <FontSize>14pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Center</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox1</rd:DefaultName>
+        <Top>10.28179cm</Top>
+        <Left>2.89602cm</Left>
+        <Height>0.86458cm</Height>
+        <Width>15.49781cm</Width>
+        <ZIndex>16</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+          <Direction>RTL</Direction>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox15">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>ويتقاضى راتبه كل</Value>
+                <Style>
+                  <FontSize>14pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Center</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox1</rd:DefaultName>
+        <Top>11.2522cm</Top>
+        <Left>13.5602cm</Left>
+        <Height>0.86458cm</Height>
+        <Width>4.32563cm</Width>
+        <ZIndex>17</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+          <Direction>RTL</Direction>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox16">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>مفصلا على الشكل التالي:</Value>
+                <Style>
+                  <FontSize>14pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Center</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox1</rd:DefaultName>
+        <Top>12.15206cm</Top>
+        <Left>12.99166cm</Left>
+        <Height>0.86458cm</Height>
+        <Width>4.41792cm</Width>
+        <ZIndex>18</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+          <Direction>RTL</Direction>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox17">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>الأجر والتعويض</Value>
+                <Style>
+                  <FontSize>14pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Center</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox1</rd:DefaultName>
+        <Top>13.11672cm</Top>
+        <Left>12.35882cm</Left>
+        <Height>0.86458cm</Height>
+        <Width>4.76103cm</Width>
+        <ZIndex>19</ZIndex>
+        <Style>
+          <Border>
+            <Style>Solid</Style>
+          </Border>
+          <TopBorder>
+            <Color>Black</Color>
+            <Style>Solid</Style>
+            <Width>1pt</Width>
+          </TopBorder>
+          <BottomBorder>
+            <Color>Black</Color>
+            <Style>Solid</Style>
+            <Width>1pt</Width>
+          </BottomBorder>
+          <LeftBorder>
+            <Color>Black</Color>
+            <Style>Solid</Style>
+            <Width>1pt</Width>
+          </LeftBorder>
+          <RightBorder>
+            <Color>Black</Color>
+            <Style>Solid</Style>
+            <Width>1pt</Width>
+          </RightBorder>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+          <Direction>RTL</Direction>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox18">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>الحسميات والإقتطاعات والأقساط</Value>
+                <Style>
+                  <FontSize>14pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Center</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox1</rd:DefaultName>
+        <Top>13.11672cm</Top>
+        <Left>0.99806cm</Left>
+        <Height>0.86458cm</Height>
+        <Width>6.21624cm</Width>
+        <ZIndex>20</ZIndex>
+        <Style>
+          <Border>
+            <Style>Solid</Style>
+          </Border>
+          <TopBorder>
+            <Color>Black</Color>
+            <Style>Solid</Style>
+            <Width>1pt</Width>
+          </TopBorder>
+          <BottomBorder>
+            <Color>Black</Color>
+            <Style>Solid</Style>
+            <Width>1pt</Width>
+          </BottomBorder>
+          <LeftBorder>
+            <Color>Black</Color>
+            <Style>Solid</Style>
+            <Width>1pt</Width>
+          </LeftBorder>
+          <RightBorder>
+            <Color>Black</Color>
+            <Style>Solid</Style>
+            <Width>1pt</Width>
+          </RightBorder>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+          <Direction>RTL</Direction>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox19">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>  الراتب المقطوع والأجر الشهري</Value>
+                <Style>
+                  <FontSize>14pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Right</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox1</rd:DefaultName>
+        <Top>14.15768cm</Top>
+        <Left>12.10027cm</Left>
+        <Height>0.86458cm</Height>
+        <Width>5.58124cm</Width>
+        <ZIndex>21</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+          <Direction>RTL</Direction>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox20">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>  تعـــويض عائلـــي</Value>
+                <Style>
+                  <FontSize>14pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Right</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox1</rd:DefaultName>
+        <Top>15.12811cm</Top>
+        <Left>12.10026cm</Left>
+        <Height>0.86458cm</Height>
+        <Width>5.58124cm</Width>
+        <ZIndex>22</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+          <Direction>RTL</Direction>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox21">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>  تعـــويض معيشـــــة</Value>
+                <Style>
+                  <FontSize>14pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Right</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox1</rd:DefaultName>
+        <Top>16.10205cm</Top>
+        <Left>12.10027cm</Left>
+        <Height>0.86458cm</Height>
+        <Width>5.58124cm</Width>
+        <ZIndex>23</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+          <Direction>RTL</Direction>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox22">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>  طبيعــــة عمـــــل</Value>
+                <Style>
+                  <FontSize>14pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Right</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox1</rd:DefaultName>
+        <Top>17.07246cm</Top>
+        <Left>12.10027cm</Left>
+        <Height>0.86458cm</Height>
+        <Width>5.58124cm</Width>
+        <ZIndex>24</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+          <Direction>RTL</Direction>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox23">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>  إختصــــــــاص</Value>
+                <Style>
+                  <FontSize>14pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Right</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox1</rd:DefaultName>
+        <Top>18.04287cm</Top>
+        <Left>12.10026cm</Left>
+        <Height>0.86458cm</Height>
+        <Width>5.58124cm</Width>
+        <ZIndex>25</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+          <Direction>RTL</Direction>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox24">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>  المتحـــــــول</Value>
+                <Style>
+                  <FontSize>14pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Right</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox1</rd:DefaultName>
+        <Top>19.01329cm</Top>
+        <Left>12.10026cm</Left>
+        <Height>0.86458cm</Height>
+        <Width>5.58124cm</Width>
+        <ZIndex>26</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+          <Direction>RTL</Direction>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox25">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>  مجموع الأجر والتعويض:</Value>
+                <Style>
+                  <FontSize>14pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Right</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox1</rd:DefaultName>
+        <Top>20.05426cm</Top>
+        <Left>12.10026cm</Left>
+        <Height>0.86458cm</Height>
+        <Width>5.58124cm</Width>
+        <ZIndex>27</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+          <Direction>RTL</Direction>
+        </Style>
+      </Textbox>
+      <Textbox Name="SlitSalary">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=Sum(Fields!SlitSalary.Value, "DataSet1")</Value>
+                <Style>
+                  <FontSize>14pt</FontSize>
+                  <Format>0;(0)</Format>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Center</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>SlitSalary</rd:DefaultName>
+        <Top>14.15768cm</Top>
+        <Left>9.09199cm</Left>
+        <Height>0.86458cm</Height>
+        <Width>2.86631cm</Width>
+        <ZIndex>28</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <BottomBorder>
+            <Style>Dotted</Style>
+          </BottomBorder>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox26">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>  تأمينات إجتماعية</Value>
+                <Style>
+                  <FontSize>14pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Right</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox1</rd:DefaultName>
+        <Top>14.15768cm</Top>
+        <Left>3.26819cm</Left>
+        <Height>0.86458cm</Height>
+        <Width>5.58124cm</Width>
+        <ZIndex>29</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+          <Direction>RTL</Direction>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox27">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>  ضريبة دخل</Value>
+                <Style>
+                  <FontSize>14pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Right</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox1</rd:DefaultName>
+        <Top>15.12811cm</Top>
+        <Left>3.31052cm</Left>
+        <Height>0.86458cm</Height>
+        <Width>5.58124cm</Width>
+        <ZIndex>30</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+          <Direction>RTL</Direction>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox28">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>  قسط تسليف شعبي</Value>
+                <Style>
+                  <FontSize>14pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Right</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox1</rd:DefaultName>
+        <Top>16.10205cm</Top>
+        <Left>3.31052cm</Left>
+        <Height>0.86458cm</Height>
+        <Width>5.58124cm</Width>
+        <ZIndex>31</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+          <Direction>RTL</Direction>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox29">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>  قسط مصرف توفير</Value>
+                <Style>
+                  <FontSize>14pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Right</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox1</rd:DefaultName>
+        <Top>17.046cm</Top>
+        <Left>3.31052cm</Left>
+        <Height>0.86458cm</Height>
+        <Width>5.58124cm</Width>
+        <ZIndex>32</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+          <Direction>RTL</Direction>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox30">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>  قسط السورية للتجارة</Value>
+                <Style>
+                  <FontSize>14pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Right</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox1</rd:DefaultName>
+        <Top>18.01641cm</Top>
+        <Left>3.31052cm</Left>
+        <Height>0.86458cm</Height>
+        <Width>5.58124cm</Width>
+        <ZIndex>33</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+          <Direction>RTL</Direction>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox31">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>  قسط مصرف عقاري</Value>
+                <Style>
+                  <FontSize>14pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Right</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox1</rd:DefaultName>
+        <Top>18.98683cm</Top>
+        <Left>3.31052cm</Left>
+        <Height>0.86458cm</Height>
+        <Width>5.58124cm</Width>
+        <ZIndex>34</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+          <Direction>RTL</Direction>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox32">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>  ضم خدمة</Value>
+                <Style>
+                  <FontSize>14pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Right</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox1</rd:DefaultName>
+        <Top>19.95724cm</Top>
+        <Left>3.31052cm</Left>
+        <Height>0.86458cm</Height>
+        <Width>5.58124cm</Width>
+        <ZIndex>35</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+          <Direction>RTL</Direction>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox33">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>  محجوزات</Value>
+                <Style>
+                  <FontSize>14pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Right</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox1</rd:DefaultName>
+        <Top>20.92765cm</Top>
+        <Left>3.31052cm</Left>
+        <Height>0.86458cm</Height>
+        <Width>5.58124cm</Width>
+        <ZIndex>36</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+          <Direction>RTL</Direction>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox34">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>  حسميات أخرى مختلفة</Value>
+                <Style>
+                  <FontSize>14pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Right</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox1</rd:DefaultName>
+        <Top>21.89808cm</Top>
+        <Left>3.31052cm</Left>
+        <Height>0.86458cm</Height>
+        <Width>5.58124cm</Width>
+        <ZIndex>37</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+          <Direction>RTL</Direction>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox35">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>  مجموع الحسميات والأقساط:</Value>
+                <Style>
+                  <FontSize>14pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Right</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox1</rd:DefaultName>
+        <Top>22.89495cm</Top>
+        <Left>3.31052cm</Left>
+        <Height>0.86458cm</Height>
+        <Width>5.58124cm</Width>
+        <ZIndex>38</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+          <Direction>RTL</Direction>
+        </Style>
+      </Textbox>
+      <Textbox Name="SocialInsurance">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=Sum(Fields!SocialInsurance.Value, "DataSet1")</Value>
+                <Style>
+                  <FontSize>14pt</FontSize>
+                  <Format>0;(0)</Format>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Center</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>SocialInsurance</rd:DefaultName>
+        <Top>14.15768cm</Top>
+        <Left>0.37365cm</Left>
+        <Height>0.86458cm</Height>
+        <Width>2.82398cm</Width>
+        <ZIndex>39</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <BottomBorder>
+            <Style>Dotted</Style>
+          </BottomBorder>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="RepaymentFamily">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=Sum(Fields!RepaymentFamily.Value, "DataSet1")</Value>
+                <Style>
+                  <FontSize>14pt</FontSize>
+                  <Format>0;(0)</Format>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Center</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>RepaymentFamily</rd:DefaultName>
+        <Top>15.12811cm</Top>
+        <Left>9.09199cm</Left>
+        <Height>0.83812cm</Height>
+        <Width>2.86631cm</Width>
+        <ZIndex>40</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <BottomBorder>
+            <Style>Dotted</Style>
+          </BottomBorder>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="DangerWork">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=Sum(Fields!DangerWork.Value, "DataSet1")</Value>
+                <Style>
+                  <FontSize>14pt</FontSize>
+                  <Format>0;(0)</Format>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Center</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>DangerWork</rd:DefaultName>
+        <Top>16.10205cm</Top>
+        <Left>9.09199cm</Left>
+        <Height>0.83812cm</Height>
+        <Width>2.86631cm</Width>
+        <ZIndex>41</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <BottomBorder>
+            <Style>Dotted</Style>
+          </BottomBorder>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="TypeSpecialize">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=Sum(Fields!TypeSpecialize.Value, "DataSet1")</Value>
+                <Style>
+                  <FontSize>14pt</FontSize>
+                  <Format>0;(0)</Format>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Center</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>TypeSpecialize</rd:DefaultName>
+        <Top>17.07246cm</Top>
+        <Left>9.09199cm</Left>
+        <Height>0.83812cm</Height>
+        <Width>2.86631cm</Width>
+        <ZIndex>42</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <BottomBorder>
+            <Style>Dotted</Style>
+          </BottomBorder>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Specialize">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=Sum(Fields!Specialize.Value, "DataSet1")</Value>
+                <Style>
+                  <FontSize>14pt</FontSize>
+                  <Format>0;(0)</Format>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Center</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Specialize</rd:DefaultName>
+        <Top>18.04287cm</Top>
+        <Left>9.09199cm</Left>
+        <Height>0.83812cm</Height>
+        <Width>2.86631cm</Width>
+        <ZIndex>43</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <BottomBorder>
+            <Style>Dashed</Style>
+          </BottomBorder>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="mutable">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=Sum(Fields!mutable.Value, "DataSet1")</Value>
+                <Style>
+                  <FontSize>14pt</FontSize>
+                  <Format>0;(0)</Format>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Center</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>mutable</rd:DefaultName>
+        <Top>19.01329cm</Top>
+        <Left>9.09199cm</Left>
+        <Height>0.83812cm</Height>
+        <Width>2.86631cm</Width>
+        <ZIndex>44</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <BottomBorder>
+            <Style>Dotted</Style>
+          </BottomBorder>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="SalaryTax">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=Sum(Fields!SalaryTax.Value, "DataSet1")</Value>
+                <Style>
+                  <FontSize>14pt</FontSize>
+                  <Format>0;(0)</Format>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Center</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>SalaryTax</rd:DefaultName>
+        <Top>15.12811cm</Top>
+        <Left>0.37365cm</Left>
+        <Height>0.83812cm</Height>
+        <Width>2.82398cm</Width>
+        <ZIndex>45</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <BottomBorder>
+            <Style>Dotted</Style>
+          </BottomBorder>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="TB_Discount">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=Sum(Fields!TB_Discount.Value, "DataSet1")</Value>
+                <Style>
+                  <FontSize>14pt</FontSize>
+                  <Format>0;(0)</Format>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Center</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>TB_Discount</rd:DefaultName>
+        <Top>16.10205cm</Top>
+        <Left>0.37365cm</Left>
+        <Height>0.83812cm</Height>
+        <Width>2.82398cm</Width>
+        <ZIndex>46</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="TWB_Discount">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=Sum(Fields!TWB_Discount.Value, "DataSet1")</Value>
+                <Style>
+                  <FontSize>14pt</FontSize>
+                  <Format>0;(0)</Format>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Center</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>TWB_Discount</rd:DefaultName>
+        <Top>17.046cm</Top>
+        <Left>0.37365cm</Left>
+        <Height>0.83812cm</Height>
+        <Width>2.82398cm</Width>
+        <ZIndex>47</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <BottomBorder>
+            <Style>Dotted</Style>
+          </BottomBorder>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="TL_Discount">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=Sum(Fields!TL_Discount.Value, "DataSet1")</Value>
+                <Style>
+                  <FontSize>14pt</FontSize>
+                  <Format>0;(0)</Format>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Center</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>TL_Discount</rd:DefaultName>
+        <Top>18.01641cm</Top>
+        <Left>0.37365cm</Left>
+        <Height>0.83812cm</Height>
+        <Width>2.82398cm</Width>
+        <ZIndex>48</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <BottomBorder>
+            <Style>Dotted</Style>
+          </BottomBorder>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="AB_Discount">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=Sum(Fields!AB_Discount.Value, "DataSet1")</Value>
+                <Style>
+                  <FontSize>14pt</FontSize>
+                  <Format>0;(0)</Format>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Center</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>AB_Discount</rd:DefaultName>
+        <Top>19.01329cm</Top>
+        <Left>0.37365cm</Left>
+        <Height>0.83812cm</Height>
+        <Width>2.82398cm</Width>
+        <ZIndex>49</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <BottomBorder>
+            <Style>Dotted</Style>
+          </BottomBorder>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="HS_Discount">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=Sum(Fields!HS_Discount.Value, "DataSet1")</Value>
+                <Style>
+                  <FontSize>14pt</FontSize>
+                  <Format>0;(0)</Format>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Center</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>HS_Discount</rd:DefaultName>
+        <Top>19.95724cm</Top>
+        <Left>0.37365cm</Left>
+        <Height>0.83812cm</Height>
+        <Width>2.82398cm</Width>
+        <ZIndex>50</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <BottomBorder>
+            <Style>Dotted</Style>
+          </BottomBorder>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="DT_Discount">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=Sum(Fields!DT_Discount.Value, "DataSet1")</Value>
+                <Style>
+                  <FontSize>14pt</FontSize>
+                  <Format>0;(0)</Format>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Center</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>DT_Discount</rd:DefaultName>
+        <Top>20.92765cm</Top>
+        <Left>0.37365cm</Left>
+        <Height>0.83812cm</Height>
+        <Width>2.82398cm</Width>
+        <ZIndex>51</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <BottomBorder>
+            <Style>Dotted</Style>
+          </BottomBorder>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox36">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value />
+                <Style>
+                  <FontSize>14pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Right</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox1</rd:DefaultName>
+        <Top>21.94217cm</Top>
+        <Left>0.37365cm</Left>
+        <Height>0.82049cm</Height>
+        <Width>2.86631cm</Width>
+        <ZIndex>52</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <BottomBorder>
+            <Style>Dotted</Style>
+          </BottomBorder>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+          <Direction>RTL</Direction>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox37">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=Sum(Fields!SlitSalary.Value, "DataSet1")+Sum(Fields!RepaymentFamily.Value, "DataSet1")+Sum(Fields!DangerWork.Value, "DataSet1")+Sum(Fields!TypeSpecialize.Value, "DataSet1")+Sum(Fields!Specialize.Value, "DataSet1")+Sum(Fields!mutable.Value, "DataSet1")</Value>
+                <Style>
+                  <FontSize>14pt</FontSize>
+                  <Format>0;(0)</Format>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Center</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox1</rd:DefaultName>
+        <Top>20.05426cm</Top>
+        <Left>9.09199cm</Left>
+        <Height>0.82049cm</Height>
+        <Width>2.86631cm</Width>
+        <ZIndex>53</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <BottomBorder>
+            <Style>Dotted</Style>
+          </BottomBorder>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+          <Direction>RTL</Direction>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox40">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=Sum(Fields!SocialInsurance.Value, "DataSet1")+Sum(Fields!SalaryTax.Value, "DataSet1")+Sum(Fields!TB_Discount.Value, "DataSet1")+Sum(Fields!TWB_Discount.Value, "DataSet1")+Sum(Fields!TL_Discount.Value, "DataSet1")+Sum(Fields!AB_Discount.Value, "DataSet1")+Sum(Fields!HS_Discount.Value, "DataSet1")+Sum(Fields!DT_Discount.Value, "DataSet1")</Value>
+                <Style>
+                  <FontSize>14pt</FontSize>
+                  <Format>0;(0)</Format>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Center</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox1</rd:DefaultName>
+        <Top>22.93905cm</Top>
+        <Left>0.37365cm</Left>
+        <Height>0.82049cm</Height>
+        <Width>2.86631cm</Width>
+        <ZIndex>54</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <BottomBorder>
+            <Style>Dotted</Style>
+          </BottomBorder>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+          <Direction>RTL</Direction>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox42">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>فيكون مجموع الراتب الشهري الصافي:</Value>
+                <Style>
+                  <FontSize>14pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Center</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox1</rd:DefaultName>
+        <Top>23.83124cm</Top>
+        <Left>11.3777cm</Left>
+        <Height>0.86458cm</Height>
+        <Width>6.96526cm</Width>
+        <ZIndex>55</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+          <Direction>RTL</Direction>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox53">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=(Sum(Fields!SlitSalary.Value, "DataSet1")+Sum(Fields!RepaymentFamily.Value, "DataSet1")+Sum(Fields!DangerWork.Value, "DataSet1")+Sum(Fields!TypeSpecialize.Value, "DataSet1")+Sum(Fields!Specialize.Value, "DataSet1")+Sum(Fields!mutable.Value, "DataSet1"))-
+(Sum(Fields!SocialInsurance.Value, "DataSet1")+Sum(Fields!SalaryTax.Value, "DataSet1")+Sum(Fields!TB_Discount.Value, "DataSet1")+Sum(Fields!TWB_Discount.Value, "DataSet1")+Sum(Fields!TL_Discount.Value, "DataSet1")+Sum(Fields!AB_Discount.Value, "DataSet1")+Sum(Fields!HS_Discount.Value, "DataSet1")+Sum(Fields!DT_Discount.Value, "DataSet1"))</Value>
+                <Style>
+                  <FontSize>14pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Center</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox52</rd:DefaultName>
+        <Top>23.83124cm</Top>
+        <Left>8.62cm</Left>
+        <Height>0.86458cm</Height>
+        <Width>2.68715cm</Width>
+        <ZIndex>56</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox43">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>ل.س</Value>
+                <Style>
+                  <FontSize>14pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Center</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox1</rd:DefaultName>
+        <Top>23.83386cm</Top>
+        <Left>7.10368cm</Left>
+        <Height>0.86458cm</Height>
+        <Width>1.48104cm</Width>
+        <ZIndex>57</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+          <Direction>RTL</Direction>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox44">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=code.ReadNum((Sum(Fields!SlitSalary.Value, "DataSet1")+Sum(Fields!RepaymentFamily.Value, "DataSet1")+Sum(Fields!DangerWork.Value, "DataSet1")+Sum(Fields!TypeSpecialize.Value, "DataSet1")+Sum(Fields!Specialize.Value, "DataSet1")+Sum(Fields!mutable.Value, "DataSet1"))-
+(Sum(Fields!SocialInsurance.Value, "DataSet1")+Sum(Fields!SalaryTax.Value, "DataSet1")+Sum(Fields!TB_Discount.Value, "DataSet1")+Sum(Fields!TWB_Discount.Value, "DataSet1")+Sum(Fields!TL_Discount.Value, "DataSet1")+Sum(Fields!AB_Discount.Value, "DataSet1")+Sum(Fields!HS_Discount.Value, "DataSet1")+Sum(Fields!DT_Discount.Value, "DataSet1")))</Value>
+                <Style>
+                  <FontSize>12pt</FontSize>
+                  <TextDecoration>Underline</TextDecoration>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Right</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox1</rd:DefaultName>
+        <Top>24.76637cm</Top>
+        <Left>5.65502cm</Left>
+        <Height>0.86458cm</Height>
+        <Width>12.02648cm</Width>
+        <ZIndex>58</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+          <Direction>RTL</Direction>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox45">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value> موقوفاً بتاريخ   /   /</Value>
+                <Style>
+                  <FontSize>14pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Right</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox1</rd:DefaultName>
+        <Top>24.76637cm</Top>
+        <Left>0.37365cm</Left>
+        <Height>0.86458cm</Height>
+        <Width>5.14026cm</Width>
+        <ZIndex>59</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+          <Direction>RTL</Direction>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox46">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>ولا يوجد التزامات على راتبة لأي جهة كانت ونتحمل كامل اتلمسؤولية القانونية في حال ثبوت العكس وسيتم ابلاغ المصرف عن أي تعديل يطرأ على وضعة الوظيفي ونتعهد بحسم المبلغ المطلوب فور إشعارنا بذلك من راتب الكفيل المذكور أعلاه وذلك لحين سداد كامل مبلغ القرض وفوائدة وحتى تبرأ ذمتة تجاة المصرف</Value>
+                <Style>
+                  <FontSize>14pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Center</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox1</rd:DefaultName>
+        <Top>25.80734cm</Top>
+        <Left>0.37365cm</Left>
+        <Height>1.87cm</Height>
+        <Width>17.96931cm</Width>
+        <ZIndex>60</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+          <Direction>RTL</Direction>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox47">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>اسم معتمد الرواتب</Value>
+                <Style>
+                  <FontSize>12pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Right</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox1</rd:DefaultName>
+        <Top>27.67734cm</Top>
+        <Left>14.1552cm</Left>
+        <Height>0.70583cm</Height>
+        <Width>3.5263cm</Width>
+        <ZIndex>61</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+          <Direction>RTL</Direction>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox48">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>توقيعة</Value>
+                <Style>
+                  <FontSize>12pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Center</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox1</rd:DefaultName>
+        <Top>28.52428cm</Top>
+        <Left>14.1552cm</Left>
+        <Height>0.70583cm</Height>
+        <Width>3.5263cm</Width>
+        <ZIndex>62</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+          <Direction>RTL</Direction>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox49">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>اسم محاسب الإدارة</Value>
+                <Style>
+                  <FontSize>12pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Right</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox1</rd:DefaultName>
+        <Top>27.75847cm</Top>
+        <Left>4.00477cm</Left>
+        <Height>0.70583cm</Height>
+        <Width>3.5263cm</Width>
+        <ZIndex>63</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+          <Direction>RTL</Direction>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox50">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>توقيعة</Value>
+                <Style>
+                  <FontSize>12pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Center</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox1</rd:DefaultName>
+        <Top>28.60542cm</Top>
+        <Left>4.00477cm</Left>
+        <Height>0.70583cm</Height>
+        <Width>3.5263cm</Width>
+        <ZIndex>64</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+          <Direction>RTL</Direction>
+        </Style>
+      </Textbox>
+      <Image Name="Image2">
+        <Source>Embedded</Source>
+        <Value>Tawfeer</Value>
+        <Sizing>FitProportional</Sizing>
+        <Top>1.23147cm</Top>
+        <Left>7.84923cm</Left>
+        <Height>1.54925cm</Height>
+        <Width>3.45792cm</Width>
+        <ZIndex>65</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+        </Style>
+      </Image>
+      <Textbox Name="Textbox38">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>أول الشهر</Value>
+                <Style>
+                  <FontSize>12pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Center</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox1</rd:DefaultName>
+        <Top>11.14637cm</Top>
+        <Left>11.28541cm</Left>
+        <Height>0.63704cm</Height>
+        <Width>1.70625cm</Width>
+        <ZIndex>66</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <BottomBorder>
+            <Color>Black</Color>
+            <Style>Solid</Style>
+            <Width>1pt</Width>
+          </BottomBorder>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+          <Direction>RTL</Direction>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox39">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>أخر الشهر</Value>
+                <Style>
+                  <FontSize>12pt</FontSize>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Center</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox1</rd:DefaultName>
+        <Top>11.78341cm</Top>
+        <Left>11.28541cm</Left>
+        <Height>0.6cm</Height>
+        <Width>1.70625cm</Width>
+        <ZIndex>67</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+          <Direction>RTL</Direction>
+        </Style>
+      </Textbox>
+    </ReportItems>
+    <Height>11.53986in</Height>
+    <Style />
+  </Body>
+  <Code> Public Function ReadNum(ByVal NumToRead As Decimal,  Optional ByVal Bound As String = "SYR") As String
+        On Error Resume Next
+        Dim VPS As Decimal = 0
+        Dim V As Decimal = 0
+        Dim WORDINTEGER As String = ""
+        Dim LE As String = ""
+        Dim P As String = ""
+        Dim PS As String = ""
+        ReadNum = ""
+        Dim POUNDS As String = ""
+        Dim WORDPS As String = ""
+        Dim DOLLAR As String = ""
+        Dim SENT As String = ""
+        Dim SENTS As String = ""
+        Dim TON As String = ""
+        Dim KG As String = ""
+        Dim KGS As String = ""
+        Select Case Bound
+            Case "SYR"
+                LE = " ليرة سورية "
+                P = " قرشا "
+                PS = " قروش "
+                POUNDS = " ليرات "
+                V = Int(Math.Abs(NumToRead))
+                VPS = Val(Strings.Right(Format(NumToRead, "000000000000.00"), 2))
+                WORDINTEGER = AmountWord(V)
+                WORDPS = AmountWord(VPS)
+                If WORDINTEGER &lt;&gt; "" And (VPS &lt;= 2) Then ReadNum = WORDINTEGER &amp; LE &amp; " و " &amp; WORDPS &amp; P &amp; "فقط لاغير "
+                If WORDINTEGER &lt;&gt; "" And (VPS &gt;= 3 And VPS &lt;= 9) Then ReadNum = WORDINTEGER &amp; LE &amp; " و " &amp; WORDPS &amp; PS &amp; "فقط لاغير "
+                If WORDINTEGER &lt;&gt; "" And (VPS &gt; 9) Then ReadNum = WORDINTEGER &amp; LE &amp; " و " &amp; WORDPS &amp; P &amp; "فقط لاغير "
+                If WORDINTEGER = "" And (VPS &lt;= 2) Then ReadNum = WORDPS &amp; P &amp; "فقط لاغير "
+                If WORDINTEGER = "" And (VPS &gt;= 3 And VPS &lt;= 9) Then ReadNum = WORDPS &amp; PS &amp; "فقط لاغير "
+                If WORDINTEGER = "" And VPS &gt; 9 Then ReadNum = WORDPS &amp; P &amp; "فقط لاغير "
+                If WORDINTEGER = "" And VPS = 0 Then ReadNum = ""
+                If WORDINTEGER &lt;&gt; "" And VPS = 0 Then ReadNum = WORDINTEGER &amp; LE &amp; "فقط لاغير "
+            Case "USA"
+                DOLLAR = " دولار "
+                SENT = " سنتاً "
+                SENTS = "سنتات"
+                V = Int(System.Math.Abs(NumToRead))
+                VPS = Val(Strings.Right(Format(NumToRead, "000000000000.00"), 2))
+                WORDINTEGER = AmountWord(V)
+                WORDPS = AmountWord(VPS)
+                If WORDINTEGER &lt;&gt; "" And (VPS &lt;= 2) Then ReadNum = WORDINTEGER &amp; DOLLAR &amp; " و " &amp; WORDPS &amp; SENT &amp; "فقط لاغير "
+                If WORDINTEGER &lt;&gt; "" And (VPS &gt;= 3 And VPS &lt;= 9) Then ReadNum = WORDINTEGER &amp; DOLLAR &amp; " و " &amp; WORDPS &amp; " " &amp; SENTS &amp; " " &amp; "فقط لاغير "
+                If WORDINTEGER &lt;&gt; "" And (VPS &gt; 9) Then ReadNum = WORDINTEGER &amp; DOLLAR &amp; " و " &amp; WORDPS &amp; SENT &amp; "فقط لاغير "
+                If WORDINTEGER = "" And (VPS &lt;= 2) Then ReadNum = WORDPS &amp; SENT &amp; "فقط لاغير "
+                If WORDINTEGER = "" And (VPS &gt;= 3 And VPS &lt;= 9) Then ReadNum = WORDPS &amp; " " &amp; SENTS &amp; " " &amp; "فقط لاغير "
+                If WORDINTEGER = "" And VPS &gt; 9 Then ReadNum = WORDPS &amp; SENT &amp; "فقط لاغير "
+                If WORDINTEGER = "" And VPS = 0 Then ReadNum = ""
+                If WORDINTEGER &lt;&gt; "" And VPS = 0 Then ReadNum = WORDINTEGER &amp; DOLLAR &amp; "فقط لاغير "
+            Case "WEIGHT"
+                TON = " طن "
+                KG = " كيلو جرام "
+                KGS = "كيلو جرامات"
+                V = Int(Math.Abs(NumToRead))
+                VPS = Val(Strings.Right(Format(NumToRead, "000000000000.000"), 3))
+                WORDINTEGER = AmountWord(V)
+                WORDPS = AmountWord(VPS)
+                If WORDINTEGER &lt;&gt; "" And (VPS &lt;= 2) Then ReadNum = WORDINTEGER &amp; TON &amp; " و " &amp; WORDPS &amp; KG &amp; "فقط لاغير "
+                If WORDINTEGER &lt;&gt; "" And (VPS &gt;= 3 And VPS &lt;= 9) Then ReadNum = WORDINTEGER &amp; TON &amp; " و " &amp; WORDPS &amp; KGS &amp; "فقط لاغير "
+                If WORDINTEGER &lt;&gt; "" And (VPS &gt; 9) Then ReadNum = WORDINTEGER &amp; TON &amp; " و " &amp; WORDPS &amp; KG &amp; "فقط لاغير "
+                If WORDINTEGER = "" And (VPS &lt;= 2) Then ReadNum = WORDPS &amp; KG &amp; "فقط لاغير "
+                If WORDINTEGER = "" And (VPS &gt;= 3 And VPS &lt;= 9) Then ReadNum = WORDPS &amp; KGS &amp; "فقط لاغير "
+                If WORDINTEGER = "" And VPS &gt; 9 Then ReadNum = WORDPS &amp; KG &amp; "فقط لاغير "
+                If WORDINTEGER = "" And VPS = 0 Then ReadNum = ""
+                If WORDINTEGER &lt;&gt; "" And VPS = 0 Then ReadNum = WORDINTEGER &amp; TON &amp; "فقط لاغير "
+        End Select
+    End Function
+    Public Function AmountWord(ByVal AMOUNT As Decimal) As String
+        On Error Resume Next
+        Dim n As Decimal = 0
+        Dim C1 As Decimal = 0
+        Dim C2 As Decimal = 0
+        Dim C3 As Decimal = 0
+        Dim C4 As Decimal = 0
+        Dim C5 As Decimal = 0
+        Dim C6 As Decimal = 0
+        Dim S1 As String = ""
+        Dim S2 As String = ""
+        Dim S3 As String = ""
+        Dim S4 As String = ""
+        Dim S5 As String = ""
+        Dim S6 As String = ""
+        Dim C As String = ""
+        n = Int(AMOUNT)
+        C = Format(n, "000000000000")
+        C1 = Val(Mid(C, 12, 1))
+        Select Case C1
+            Case Is = 1 : S1 = "واحد"
+            Case Is = 2 : S1 = "اثنان"
+            Case Is = 3 : S1 = "ثلاثة"
+            Case Is = 4 : S1 = "اربعة"
+            Case Is = 5 : S1 = "خمسة"
+            Case Is = 6 : S1 = "ستة"
+            Case Is = 7 : S1 = "سبعة"
+            Case Is = 8 : S1 = "ثمانية"
+            Case Is = 9 : S1 = "تسعة"
+        End Select
+
+        C2 = Val(Mid(C, 11, 1))
+        Select Case C2
+            Case Is = 1 : S2 = "عشر"
+            Case Is = 2 : S2 = "عشرون"
+            Case Is = 3 : S2 = "ثلاثون"
+            Case Is = 4 : S2 = "اربعون"
+            Case Is = 5 : S2 = "خمسون"
+            Case Is = 6 : S2 = "ستون"
+            Case Is = 7 : S2 = "سبعون"
+            Case Is = 8 : S2 = "ثمانون"
+            Case Is = 9 : S2 = "تسعون"
+        End Select
+
+        If S1 &lt;&gt; "" And C2 &gt; 1 Then S2 = S1 + " و" + S2
+        If S2 = "" Then S2 = S1
+        If C1 = 0 And C2 = 1 Then S2 = S2 + "ة"
+        If C1 = 1 And C2 = 1 Then S2 = "احدى عشر"
+        If C1 = 2 And C2 = 1 Then S2 = "اثنى عشر"
+        If C1 &gt; 2 And C2 = 1 Then S2 = S1 + " " + S2
+        C3 = Val(Mid(C, 10, 1))
+        Select Case C3
+            Case Is = 1 : S3 = "مائة"
+            Case Is = 2 : S3 = "مئتان"
+            Case Is &gt; 2 : S3 = Strings.Left(AmountWord(C3), Len(AmountWord(C3)) - 1) + "مائة"
+        End Select
+        If S3 &lt;&gt; "" And S2 &lt;&gt; "" Then S3 = S3 + " و" + S2
+        If S3 = "" Then S3 = S2
+
+        C4 = Val(Mid(C, 7, 3))
+        Select Case C4
+            Case Is = 1 : S4 = "الف"
+            Case Is = 2 : S4 = "الفان"
+            Case 3 To 10 : S4 = AmountWord(C4) + " آلاف"
+            Case Is &gt; 10 : S4 = AmountWord(C4) + " الف"
+        End Select
+        If S4 &lt;&gt; "" And S3 &lt;&gt; "" Then S4 = S4 + " و" + S3
+        If S4 = "" Then S4 = S3
+        C5 = Val(Mid(C, 4, 3))
+        Select Case C5
+            Case Is = 1 : S5 = "مليون"
+            Case Is = 2 : S5 = "مليونان"
+            Case 3 To 10 : S5 = AmountWord(C5) + " ملايين"
+            Case Is &gt; 10 : S5 = AmountWord(C5) + " مليون"
+        End Select
+        If S5 &lt;&gt; "" And S4 &lt;&gt; "" Then S5 = S5 + " و" + S4
+        If S5 = "" Then S5 = S4
+
+        C6 = Val(Mid(C, 1, 3))
+
+        Select Case C6
+            Case Is = 1 : S6 = "مليار"
+            Case Is = 2 : S6 = "ملياران"
+            Case Is &gt; 2 : S6 = AmountWord(C6) + " مليار"
+        End Select
+        If S6 &lt;&gt; "" And S5 &lt;&gt; "" Then S6 = S6 + " و" + S5
+        If S6 = "" Then S6 = S5
+        AmountWord = S6
+    End Function</Code>
+  <Width>7.90625in</Width>
+  <Page>
+    <PageHeight>29.7cm</PageHeight>
+    <PageWidth>21cm</PageWidth>
+    <LeftMargin>0.5cm</LeftMargin>
+    <RightMargin>0cm</RightMargin>
+    <TopMargin>0cm</TopMargin>
+    <BottomMargin>0cm</BottomMargin>
+    <ColumnSpacing>0.13cm</ColumnSpacing>
+    <Style />
+  </Page>
+  <EmbeddedImages>
+    <EmbeddedImage Name="Tawfeer">
+      <MIMEType>image/png</MIMEType>
+      <ImageData>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</ImageData>
+    </EmbeddedImage>
+  </EmbeddedImages>
+  <rd:ReportID>bab47b4e-af95-4988-a2b8-369a0d86a446</rd:ReportID>
+  <rd:ReportUnitType>Cm</rd:ReportUnitType>
+</Report>

@@ -1,0 +1,923 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="My" GeneratedClassName="MySettings" UseMySettingsClassName="true">
+  <Profiles />
+  <Settings>
+    <Setting Name="InsertLastSalary" Type="System.String" Scope="User">
+      <Value Profile="(Default)">INSERT INTO LastSalareis(
+EmpID
+,FinanceID
+,DirectorateID
+,CenterID
+,OfficeID
+,IsContract
+,Fname
+,Mname
+,Lname
+,FullName
+,agentEmp
+,SlitSalary
+,Allowance
+,RepaymentFamily
+,RF_HaveWife
+,RF_child1
+,RF_child2
+,RF_child3
+,RF_OtherChild
+,IsEngeneer
+,Specialize
+,TypeSpecialize
+,Authority
+,TSpecialize
+,ReturnSpecialize
+,DangerWork
+,BacklogReturn
+,Impulse
+,Gift
+,drive
+,Night
+,TotalTax
+,SalaryTax
+,BacklogRecover
+,TotalTakeOuts
+,IsSocialInsurance
+,SocialInsurance
+,IsCooperateBox
+,CooperateBox
+,ISCooperationWorkers
+,CooperationWorkers
+,IsEngCooperation
+,EngCooperation
+,IShabitation
+,habitation
+,habitationPerc
+,IsAssistBox
+,AssistBox
+,IsEndService
+,EndService
+,AbsenceNumber
+,absence
+,IntegratorSolidarity
+,IsSolidaritySocial
+,SolidaritySocial
+,SportClup
+,Incubation
+,Typo
+,IsDeathAssist
+,DeathAssist
+,HoldServiceDate
+,HS_Total
+,HS_Mounths
+,HS_Discount
+,Datepenalty
+,P_Total
+,P_Mounths
+,P_Discount
+,DiscountTaskDate
+,DT_Total
+,DT_Mounts
+,DT_Discount
+,RodDate
+,R_Total
+,R_Mounths
+,R_Discount
+,CooperationLoanDate
+,CL_Total
+,CL_Mounths
+,CL_Discount
+,WorkersLoanDate
+,WL_Total
+,WL_Mounts
+,WL_Discount
+,EngCooperationTaxDate
+,ECT_Total
+,ECT_Mounts
+,ECT_Discount
+,AkariBankDate
+,AB_Total
+,AB_Mounts
+,AB_Discount
+,TasleefBankDate
+,TB_Total
+,TB_Mounts
+,TB_Discount
+,TawfeerBankDate
+,TWB_Total
+,TWB_Mounts
+,TWB_Discount
+,TajzahLoanDate
+,TL_Total
+,TL_Mounts
+,TL_Discount
+,RecoveryDate
+,RC_Total
+,RC_Mounts
+,RC_Discount
+,FullSalary
+,SumDiscounts
+,TotalSalary
+,SalaryYear
+,SalaryMount
+,UserID
+,CreateDate
+,LastModify
+,MarkNo
+,MarkRecord
+,ControlID
+,TaxationID
+,SalaryConstants
+,CardNo
+,OldSlitSalary
+,IsEngFarm
+,TaxFarmEng
+,IsstipendInsurance
+,stipendInsurance
+,EmpHelth
+,EmpCompany
+,Notes
+,WorkableEmp
+,CleanerTax
+,STindex
+,Tindex
+,IsManager
+,ManagerTax
+,NoTax
+,Slave_DeathAssist
+,Slave_AssistBox
+,Slave_SolidaritySocial
+,EmpClass
+,IsSoldur
+,mutable
+,mutableClass
+,mutableDays
+,mutableCost
+,salarysame
+,HealthVacationDays
+,HealthVacationCost
+,NoSalaryDays
+,NoSalaryCost
+,Qhelp
+,retirefarmeng
+,SpCar
+,NoSpcar
+,SpHouse
+,Pmanager
+,Amanager
+,Nmanager
+,IsOverWorkOhr
+,OverWorkNight
+,OverWorkDay
+,OverWorkOhr
+,OverWorkValue
+,ForecTopWvalue
+,Qhelp1
+,Qhelp2
+,IsWorkers
+,ContractSdate
+,ContractEdate
+,ContractAbsenc
+,ContractAbsencVa
+,ContractNo
+,Gender
+,DriveMark
+,DriveVication
+,DriveMarkValue
+,IsDrive
+,IsAdministrative
+,IsDelegation
+,ExcepID
+,Exceptionvalue
+)
+Select
+EmpID
+,FinanceID
+,DirectorateID
+,CenterID
+,OfficeID
+,IsContract
+,Fname
+,Mname
+,Lname
+,FullName
+,agentEmp
+,SlitSalary
+,Allowance
+,RepaymentFamily
+,RF_HaveWife
+,RF_child1
+,RF_child2
+,RF_child3
+,RF_OtherChild
+,IsEngeneer
+,Specialize
+,TypeSpecialize
+,Authority
+,TSpecialize
+,ReturnSpecialize
+,DangerWork
+,BacklogReturn
+,Impulse
+,Gift
+,drive
+,Night
+,TotalTax
+,SalaryTax
+,BacklogRecover
+,TotalTakeOuts
+,IsSocialInsurance
+,SocialInsurance
+,IsCooperateBox
+,CooperateBox
+,ISCooperationWorkers
+,CooperationWorkers
+,IsEngCooperation
+,EngCooperation
+,IShabitation
+,habitation
+,habitationPerc
+,IsAssistBox
+,AssistBox
+,IsEndService
+,EndService
+,AbsenceNumber
+,absence
+,IntegratorSolidarity
+,IsSolidaritySocial
+,SolidaritySocial
+,SportClup
+,Incubation
+,Typo
+,IsDeathAssist
+,DeathAssist
+,HoldServiceDate
+,HS_Total
+,case when HS_Mounths&gt;=HS_Discount then (ISNULL(HS_Mounths,0)-ISNULL(HS_Discount,0)) else 0 end
+,HS_Discount
+,Datepenalty
+,P_Total
+,case when P_Mounths&gt;=P_Discount then (ISNULL(P_Mounths,0)-ISNULL(P_Discount,0)) else 0 end
+,P_Discount
+,DiscountTaskDate
+,DT_Total
+,case when DT_Mounts&gt;=DT_Discount then (ISNULL(DT_Mounts,0)-ISNULL(DT_Discount,0)) else 0 end 
+,DT_Discount
+,RodDate
+,R_Total
+,case when R_Mounths&gt;=R_Discount then (ISNULL(R_Mounths,0)-ISNULL(R_Discount,0)) else 0 end  
+,R_Discount
+,CooperationLoanDate
+,CL_Total
+,case when CL_Mounths&gt;=CL_Discount then (ISNULL(CL_Mounths,0)-ISNULL(CL_Discount,0)) else 0 end   
+,CL_Discount
+,WorkersLoanDate
+,WL_Total
+,case when WL_Mounts&gt;=WL_Discount then (ISNULL(WL_Mounts,0)-ISNULL(WL_Discount,0)) else 0 end    
+,WL_Discount
+,EngCooperationTaxDate
+,ECT_Total
+,case when ECT_Mounts&gt;=ECT_Discount then (ISNULL(ECT_Mounts,0)-ISNULL(ECT_Discount,0)) else 0 end   
+,ECT_Discount
+,AkariBankDate
+,AB_Total
+,case when AB_Mounts&gt;=AB_Discount then (ISNULL(AB_Mounts,0)-ISNULL(AB_Discount,0)) else 0 end    
+,AB_Discount
+,TasleefBankDate
+,TB_Total
+,case when TB_Mounts&gt;=TB_Discount then (ISNULL(TB_Mounts,0)-ISNULL(TB_Discount,0)) else 0 end    
+,TB_Discount
+,TawfeerBankDate
+,TWB_Total
+,case when TWB_Mounts&gt;=TWB_Discount then (ISNULL(TWB_Mounts,0)-ISNULL(TWB_Discount,0)) else 0 end     
+,TWB_Discount
+,TajzahLoanDate
+,TL_Total
+,case when TL_Mounts&gt;=TL_Discount then (ISNULL(TL_Mounts,0)-ISNULL(TL_Discount,0)) else 0 end    
+,TL_Discount
+,RecoveryDate
+,RC_Total
+,case when RC_Mounts&gt;=RC_Discount then (ISNULL(RC_Mounts,0)-ISNULL(RC_Discount,0)) else 0 end   
+,RC_Discount
+,FullSalary
+,SumDiscounts
+,TotalSalary
+,SalaryYear
+,SalaryMount
+,UserID
+,CreateDate
+,LastModify
+,MarkNo
+,MarkRecord
+,ControlID
+,TaxationID
+,SalaryConstants
+,CardNo
+,OldSlitSalary
+,IsEngFarm
+,TaxFarmEng
+,IsstipendInsurance
+,stipendInsurance
+,EmpHelth
+,EmpCompany
+,Notes
+,WorkableEmp
+,CleanerTax
+,STindex
+,Tindex
+,IsManager
+,ManagerTax
+,NoTax
+,Slave_DeathAssist
+,Slave_AssistBox
+,Slave_SolidaritySocial
+,EmpClass
+,IsSoldur
+,mutable
+,mutableClass
+,mutableDays
+,mutableCost
+,salarysame
+,HealthVacationDays
+,HealthVacationCost
+,NoSalaryDays
+,NoSalaryCost
+,Qhelp
+,retirefarmeng
+,SpCar
+,NoSpcar
+,SpHouse
+,Pmanager
+,Amanager
+,Nmanager
+,IsOverWorkOhr
+,OverWorkNight
+,OverWorkDay
+,OverWorkOhr
+,OverWorkValue
+,ForecTopWvalue
+,Qhelp1
+,Qhelp2
+,IsWorkers
+,ContractSdate
+,ContractEdate
+,ContractAbsenc
+,ContractAbsencVa
+,ContractNo
+,Gender
+,DriveMark
+,DriveVication
+,DriveMarkValue
+,IsDrive
+,IsAdministrative
+,IsDelegation
+,ExcepID
+,Exceptionvalue
+From SalaryRecords</Value>
+    </Setting>
+    <Setting Name="UpdateBacklogReturn" Type="System.String" Scope="User">
+      <Value Profile="(Default)">INSERT INTO LastBaklogReturn(
+ BacklogRID
+,BacklogName
+,EmpID
+,IsConnect
+,ConnectWith
+,BacklogTotal
+,IsRepeated
+,RepeatedMounts
+,RM_Remaining
+,Notes
+,UserID
+,CreateDAte
+,LastModify
+,ControlID
+)
+select
+ BacklogRID
+,BacklogName
+,EmpID
+,IsConnect
+,ConnectWith
+,BacklogTotal
+,IsRepeated
+,RepeatedMounts
+,RM_Remaining
+,Notes
+,UserID
+,CreateDAte
+,LastModify
+,ControlID
+from BacklogReturn
+</Value>
+    </Setting>
+    <Setting Name="UpdateBacklogRecover" Type="System.String" Scope="User">
+      <Value Profile="(Default)">INSERT INTO LastBaklogRecover(
+BacklogRCID
+,BacklogName
+,EmpID
+,BacklogTotal
+,IsRepeated
+,RepeatedMounts
+,RM_Remaining
+,Notes
+,UserID
+,CreateDate
+,LastModify
+,ControlID
+)
+SELECT
+BacklogRCID
+,BacklogName
+,EmpID
+,BacklogTotal
+,IsRepeated
+,RepeatedMounts
+,RM_Remaining
+,Notes
+,UserID
+,CreateDate
+,LastModify
+,ControlID
+FROM BacklogRecover
+</Value>
+    </Setting>
+    <Setting Name="UpdateLastConsyants" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="UpdateAllSolfa" Type="System.String" Scope="User">
+      <Value Profile="(Default)">SET DATEFORMAT dmy;
+UPDATE SalaryRecords set
+HS_Mounths=case when HS_Mounths&gt;=HS_Discount then (ISNULL(HS_Mounths,0)-ISNULL(HS_Discount,0)) else HS_Mounths end
+UPDATE SalaryRecords set
+HS_Discount=case when HS_Mounths&gt;HS_Discount then HS_Discount else HS_Mounths end,
+HoldServiceDate=case when HS_Mounths=0 then NULL else HoldServiceDate end,
+HS_Total=case when HS_Mounths=0 then 0 else HS_Total end
+---------------------------
+UPDATE SalaryRecords set
+ECT_Mounts=case when ECT_Mounts&gt;=ECT_Discount then (ISNULL(ECT_Mounts,0)-ISNULL(ECT_Discount,0)) else ECT_Mounts end
+UPDATE SalaryRecords set
+ECT_Discount=case when ECT_Mounts&gt;ECT_Discount then ECT_Discount else ECT_Mounts end,
+EngCooperationTaxDate=case when ECT_Mounts=0 then NULL else EngCooperationTaxDate end,
+ECT_Total=case when ECT_Mounts=0 then 0 else ECT_Total end
+--------------
+UPDATE SalaryRecords set
+P_Mounths=case when P_Mounths&gt;=P_Discount then (ISNULL(P_Mounths,0)-ISNULL(P_Discount,0)) else P_Mounths end
+UPDATE SalaryRecords set
+P_Discount=case when P_Mounths&gt;P_Discount then P_Discount else P_Mounths end,
+Datepenalty=case when P_Mounths=0 then NULL else Datepenalty end,
+P_Total=case when P_Mounths=0 then 0 else P_Total end
+-----------------
+UPDATE SalaryRecords set
+RC_Mounts=case when RC_Mounts&gt;=RC_Discount then (ISNULL(RC_Mounts,0)-ISNULL(RC_Discount,0)) else RC_Mounts end
+UPDATE SalaryRecords set
+RC_Discount=case when RC_Mounts&gt;RC_Discount then RC_Discount else RC_Mounts end,
+RecoveryDate=case when RC_Mounts=0 then NULL else RecoveryDate end,
+RC_Total=case when RC_Mounts=0 then 0 else RC_Total end
+-----------------
+UPDATE SalaryRecords set
+DT_Mounts=case when DT_Mounts&gt;=DT_Discount then (ISNULL(DT_Mounts,0)-ISNULL(DT_Discount,0)) else DT_Mounts end
+UPDATE SalaryRecords set
+DT_Discount=case when DT_Mounts&gt;DT_Discount then DT_Discount else DT_Mounts end,
+DiscountTaskDate=case when DT_Mounts=0 then NULL else DiscountTaskDate end,
+DT_Total=case when DT_Mounts=0 then 0 else DT_Total end
+-----------------
+UPDATE SalaryRecords set
+R_Mounths=case when R_Mounths&gt;=R_Discount then (ISNULL(R_Mounths,0)-ISNULL(R_Discount,0)) else R_Mounths end
+UPDATE SalaryRecords set
+R_Discount=case when R_Mounths&gt;R_Discount then R_Discount else R_Mounths end,
+RodDate=case when R_Mounths=0 then NULL else RodDate end,
+R_Total=case when R_Mounths=0 then 0 else R_Total end
+-----------------
+UPDATE SalaryRecords set
+AB_Mounts=case when AB_Mounts&gt;=AB_Discount then (ISNULL(AB_Mounts,0)-ISNULL(AB_Discount,0)) else AB_Mounts end
+UPDATE SalaryRecords set
+AB_Discount=case when AB_Mounts&gt;AB_Discount then AB_Discount else AB_Mounts end,
+AkariBankDate=case when AB_Mounts=0 then NULL else AkariBankDate end,
+AB_Total=case when AB_Mounts=0 then 0 else AB_Total end
+-----------------
+UPDATE SalaryRecords set
+TB_Mounts=case when TB_Mounts&gt;=TB_Discount then (ISNULL(TB_Mounts,0)-ISNULL(TB_Discount,0)) else TB_Mounts end
+UPDATE SalaryRecords set
+TB_Discount=case when TB_Mounts&gt;TB_Discount then TB_Discount else TB_Mounts end,
+TasleefBankDate=case when TB_Mounts=0 then NULL else TasleefBankDate end,
+TB_Total=case when TB_Mounts=0 then 0 else TB_Total end
+----------------- 
+UPDATE SalaryRecords set
+TWB_Mounts=case when TWB_Mounts&gt;=TWB_Discount then (ISNULL(TWB_Mounts,0)-ISNULL(TWB_Discount,0)) else TWB_Mounts end
+UPDATE SalaryRecords set
+TWB_Discount=case when TWB_Mounts&gt;TWB_Discount then TWB_Discount else TWB_Mounts end,
+TawfeerBankDate=case when TWB_Mounts=0 then NULL else TawfeerBankDate end,
+TWB_Total=case when TWB_Mounts=0 then 0 else TWB_Total end
+----------------- 
+UPDATE SalaryRecords set
+TL_Mounts=case when TL_Mounts&gt;=TL_Discount then (ISNULL(TL_Mounts,0)-ISNULL(TL_Discount,0)) else TL_Mounts end
+UPDATE SalaryRecords set
+TL_Discount=case when TL_Mounts&gt;TL_Discount then TL_Discount else TL_Mounts end,
+TajzahLoanDate=case when TL_Mounts=0 then NULL else TajzahLoanDate end,
+TL_Total=case when TL_Mounts=0 then 0 else TL_Total end
+----------------- 
+UPDATE SalaryRecords set
+CL_Mounths=case when CL_Mounths&gt;=CL_Discount then (ISNULL(CL_Mounths,0)-ISNULL(CL_Discount,0)) else CL_Mounths end
+UPDATE SalaryRecords set
+CL_Discount=case when CL_Mounths&gt;CL_Discount then CL_Discount else CL_Mounths end,
+CooperationLoanDate=case when CL_Mounths=0 then NULL else CooperationLoanDate end,
+CL_Total=case when CL_Mounths=0 then 0 else CL_Total end
+----------------- 
+UPDATE SalaryRecords set
+WL_Mounts=case when WL_Mounts&gt;=WL_Discount then (ISNULL(WL_Mounts,0)-ISNULL(WL_Discount,0)) else WL_Mounts end
+UPDATE SalaryRecords set
+WL_Discount=case when WL_Mounts&gt;WL_Discount then WL_Discount else WL_Mounts end,
+WorkersLoanDate=case when WL_Mounts=0 then NULL else WorkersLoanDate end,
+WL_Total=case when WL_Mounts=0 then 0 else WL_Total end</Value>
+    </Setting>
+    <Setting Name="CurrentRecord" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="CurrentTab" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="SetCalcOnOldslit" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="chechSalary" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="ExportReports" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="Oldspecial" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="ActivateSalary" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="ActibeFor" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="CreatePatchRecover" Type="System.String" Scope="User">
+      <Value Profile="(Default)">CREATE PROCEDURE [dbo].[RecoverPatch]
+	@BacklogName nvarchar(50),
+	@BacklogTotal int,
+	@IsRepeated bit,
+	@RepeatedMounts int,
+	@RM_Remaining int,
+	@Notes nvarchar(max),
+	@UserID int,
+	@ControlID int,
+	@ReturnTax bit,
+	@Ispercent bit 
+AS
+BEGIN
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[RecoverTmp]') AND type in (N'U'))
+DROP TABLE [dbo].[RecoverTmp]
+CREATE TABLE [dbo].[RecoverTmp](
+	[BacklogRCID] [bigint] IDENTITY(1,1) NOT NULL,
+	[BacklogName] [nvarchar](150) NULL,
+	[EmpID] [int] NULL,
+	[BacklogTotal] [int] NULL,
+	[IsRepeated] [bit] NULL,
+	[RepeatedMounts] [int] NULL,
+	[RM_Remaining] [int] NULL,
+	[Notes] [nvarchar](max) NULL,
+	[UserID] [int] NULL,
+	[CreateDate] [nvarchar](50) NULL,
+	[LastModify] [nvarchar](50) NULL,
+	[ControlID] [int] NULL,
+	[ReturnTax] [bit] NULL,
+ CONSTRAINT [PK_RecoverTmp] PRIMARY KEY CLUSTERED 
+(
+	[BacklogRCID] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+declare @CuID int =isnull((select MAX(BacklogRCID)+1  from BacklogRecover),1)
+DBCC CHECKIDENT ("recoverTmp", RESEED, @CuID);
+INSERT INTO RecoverTmp
+           (
+           [BacklogName]
+           ,[EmpID]
+           ,[BacklogTotal]
+           ,[IsRepeated]
+           ,[RepeatedMounts]
+           ,[RM_Remaining]
+           ,[Notes]
+           ,[UserID]
+           ,[CreateDate]
+           ,[LastModify]
+           ,[ControlID]
+           ,[ReturnTax]
+           )
+     select
+          
+           @BacklogName
+           ,SalaryRecords.EmpID
+           ,case when @Ispercent=1 then CEILING(SalaryRecords.SlitSalary*@BacklogTotal/100) else @BacklogTotal end 
+           ,@IsRepeated
+           ,@RepeatedMounts
+           ,@RM_Remaining
+           ,@Notes
+           ,@UserID
+           ,GETDATE()
+           ,GETDATE()
+           ,@ControlID
+           ,@ReturnTax
+           
+from SalaryRecords
+
+INSERT INTO [SalaryLatDB].[dbo].[BacklogRecover]
+           ([BacklogRCID]
+           ,[BacklogName]
+           ,[EmpID]
+           ,[BacklogTotal]
+           ,[IsRepeated]
+           ,[RepeatedMounts]
+           ,[RM_Remaining]
+           ,[Notes]
+           ,[UserID]
+           ,[CreateDate]
+           ,[LastModify]
+           ,[ControlID]
+           ,[ReturnTax])
+     SELECT
+           RecoverTmp.BacklogRCID
+           ,RecoverTmp.BacklogName
+           ,RecoverTmp.EmpID
+           ,RecoverTmp.BacklogTotal
+           ,RecoverTmp.IsRepeated
+           ,RecoverTmp.RepeatedMounts
+           ,RecoverTmp.RM_Remaining
+           ,RecoverTmp.Notes
+           ,RecoverTmp.UserID
+           ,RecoverTmp.CreateDate
+           ,RecoverTmp.LastModify
+           ,RecoverTmp.ControlID
+           ,RecoverTmp.ReturnTax
+FROM RecoverTmp
+END
+</Value>
+    </Setting>
+    <Setting Name="DropPatchRecover" Type="System.String" Scope="User">
+      <Value Profile="(Default)">USE [SalaryLatDB]
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[RecoverPatch]') AND type in (N'P', N'PC'))
+DROP PROCEDURE [dbo].[RecoverPatch]</Value>
+    </Setting>
+    <Setting Name="InsertLastTakeOuts" Type="System.String" Scope="User">
+      <Value Profile="(Default)">INSERT INTO [SalaryLatDB].[dbo].[LastTakeOuts]
+           ([TakeoutID]
+           ,[EmpID]
+           ,[TakeoutName]
+           ,[TakeoutDate]
+           ,[TakeoutTotal]
+           ,[TakeoutMounts]
+           ,[TakeoutDiscount]
+           ,[TakeoutRemaining]
+           ,[RemainingEndate]
+           ,[Notes]
+           ,[CreateDate]
+           ,[LastModify]
+           ,[UserID]
+           ,[ControlID]
+           ,[IsClose])
+     select
+            [TakeoutID]
+           ,[EmpID]
+           ,[TakeoutName]
+           ,[TakeoutDate]
+           ,[TakeoutTotal]
+           ,[TakeoutMounts]
+           ,[TakeoutDiscount]
+           ,case when [TakeoutRemaining]&gt;=[TakeoutDiscount] then (ISNULL([TakeoutRemaining],0)-ISNULL([TakeoutDiscount],0)) else 0 end 
+           ,[RemainingEndate]
+           ,[Notes]
+           ,[CreateDate]
+           ,[LastModify]
+           ,[UserID]
+           ,[ControlID]
+           ,[IsClose]
+from TakeOuts</Value>
+    </Setting>
+    <Setting Name="CheckSlitSalary" Type="System.String" Scope="User">
+      <Value Profile="(Default)">select EmpID ,FullName,SlitSalary,(case EmpClass when 1 then sc.Class1
+when 2 then sc.Class2
+when 3 then sc.Class3
+when 4 then sc.Class4
+when 5 then sc.Class5 end) as maxslitsalary from SalaryRecords SR CROSS JOIN SalaryConstants SC
+where SlitSalary&gt; case EmpClass when 1 then sc.Class1
+when 2 then sc.Class2
+when 3 then sc.Class3
+when 4 then sc.Class4
+when 5 then sc.Class5 end</Value>
+    </Setting>
+    <Setting Name="SalTriger" Type="System.Windows.Forms.CheckState" Scope="User">
+      <Value Profile="(Default)">Unchecked</Value>
+    </Setting>
+    <Setting Name="StopAdmiTriger" Type="System.Windows.Forms.CheckState" Scope="User">
+      <Value Profile="(Default)">Unchecked</Value>
+    </Setting>
+    <Setting Name="Cmutable" Type="System.String" Scope="User">
+      <Value Profile="(Default)">update CreateMutable Set
+Sdate=ISNULL(Sdate,getdate())
+,Edate=ISNULL(Edate,getdate())
+,surplus=LaborPrice*RotationPrice--فائض الطوناج الحسابي
+,InOutMutable=Quantity*UnitPrice--كمية الطوناج المتحقق
+,CompanyPeriod=(Quantity*UnitPrice)*0.1--القيمة ناقص صحة الشركة 10
+,TotalMutable=(Quantity*UnitPrice)-((Quantity*UnitPrice)*0.1)--قيمة الطوناج الإجمالي
+,distributionM=((Quantity*UnitPrice)-((Quantity*UnitPrice)*0.1))-TotalSurplus--قيمة الطوناج القابل للتوزيع
+,PeriodClass1=(((Quantity*UnitPrice)-((Quantity*UnitPrice)*0.1))-TotalSurplus)*0.4--حصة الفئة الأولى
+,PeriodClass2=(((Quantity*UnitPrice)-((Quantity*UnitPrice)*0.1))-TotalSurplus)*0.2--حصة الفئة الثانية
+,PeriodClass3=(((Quantity*UnitPrice)-((Quantity*UnitPrice)*0.1))-TotalSurplus)*0.14--حصة الفئة الثالثة
+,PeriodClass4=(((Quantity*UnitPrice)-((Quantity*UnitPrice)*0.1))-TotalSurplus)*0.13--حصة الفئة الرابعة
+,PeriodClass5=(((Quantity*UnitPrice)-((Quantity*UnitPrice)*0.1))-TotalSurplus)*0.13--حصة الفئة الخامسة
+,pClass1=((((Quantity*UnitPrice)-((Quantity*UnitPrice)*0.1))-TotalSurplus)*0.4)/mClass1--حصة اليوم للفئة الأولى
+,pClass2=((((Quantity*UnitPrice)-((Quantity*UnitPrice)*0.1))-TotalSurplus)*0.2)/mClass2--حصة اليوم للفئة الثانية
+,pClass3=((((Quantity*UnitPrice)-((Quantity*UnitPrice)*0.1))-TotalSurplus)*0.14)/mClass3--حصة اليوم للفئة الثالثة
+,pClass4=((((Quantity*UnitPrice)-((Quantity*UnitPrice)*0.1))-TotalSurplus)*0.13)/mClass4--حصة اليوم للفئة الرابعة
+,pClass5=((((Quantity*UnitPrice)-((Quantity*UnitPrice)*0.1))-TotalSurplus)*0.13)/mClass5--حصة اليوم للفئة الخامسة
+</Value>
+    </Setting>
+    <Setting Name="CRVservername" Type="System.String" Scope="User">
+      <Value Profile="(Default)">RAMITTA</Value>
+    </Setting>
+    <Setting Name="CRVuserid" Type="System.String" Scope="User">
+      <Value Profile="(Default)">sa</Value>
+    </Setting>
+    <Setting Name="CRVpw" Type="System.String" Scope="User">
+      <Value Profile="(Default)">microsoft@1976</Value>
+    </Setting>
+    <Setting Name="CRVisecurity" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="CRVDBname" Type="System.String" Scope="User">
+      <Value Profile="(Default)">SalaryLatDB</Value>
+    </Setting>
+    <Setting Name="InsertMutable" Type="System.String" Scope="User">
+      <Value Profile="(Default)">declare 
+@sm int
+,@sy int
+select @sy=  SalaryYear from SalaryRecords
+select @sm=  SalaryMount from SalaryRecords
+INSERT INTO [dbo].[CreateMutable]
+           ([Sdate]
+           ,[Edate]
+           ,[Quantity]
+           ,[UnitPrice]
+           ,[LaborPrice]
+           ,[TotalSurplus]
+           ,[mClass1]
+           ,[mClass2]
+           ,[mClass3]
+           ,[mClass4]
+           ,[mClass5]
+           ,[sMonth]
+           ,[sYear]
+          )
+     VALUES
+           (getdate()
+           ,getdate()
+           ,550000
+           ,75.53
+           ,200000
+          ,100000
+           ,1000
+           ,1000
+           ,1000
+           ,1000
+           ,1000
+           ,@sm
+           ,@sy )
+          </Value>
+    </Setting>
+    <Setting Name="DelRestorePoint" Type="System.String" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="DelArchive" Type="System.String" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="DropPatchReturn" Type="System.String" Scope="User">
+      <Value Profile="(Default)">USE [SalaryLatDB]
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[ReturnPatch]') AND type in (N'P', N'PC'))
+DROP PROCEDURE [dbo].[ReturnPatch]</Value>
+    </Setting>
+    <Setting Name="CreatePatchReturn" Type="System.String" Scope="User">
+      <Value Profile="(Default)">CREATE PROCEDURE [dbo].[ReturnPatch]
+	@BacklogName nvarchar(50),
+	@BacklogTotal int,
+	@IsRepeated bit,
+	@RepeatedMounts int,
+	@RM_Remaining int,
+	@Notes nvarchar(max),
+	@UserID int,
+	@ControlID int,
+	@ExpTax bit,
+	@Ispercent bit 
+AS
+BEGIN
+IF  EXISTS (SELECT * FROM sys.objects WHERE object_id = OBJECT_ID(N'[dbo].[ReturnTmp]') AND type in (N'U'))
+DROP TABLE [dbo].[ReturnTmp]
+CREATE TABLE [dbo].[ReturnTmp](
+	[BacklogRID] [bigint] IDENTITY(1,1) NOT NULL,
+	[BacklogName] [nvarchar](150) NULL,
+	[EmpID] [int] NULL,
+	[BacklogTotal] [int] NULL,
+	[IsRepeated] [bit] NULL,
+	[RepeatedMounts] [int] NULL,
+	[RM_Remaining] [int] NULL,
+	[Notes] [nvarchar](max) NULL,
+	[UserID] [int] NULL,
+	[CreateDate] [nvarchar](50) NULL,
+	[LastModify] [nvarchar](50) NULL,
+	[ControlID] [int] NULL,
+	[ExpTax] [bit] NULL,
+ CONSTRAINT [PK_ReturnTmp] PRIMARY KEY CLUSTERED 
+(
+	[BacklogRID] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+declare @CuID int =isnull((select MAX(BacklogRID)+1  from BacklogReturn),1)
+DBCC CHECKIDENT ("ReturnTmp", RESEED, @CuID);
+INSERT INTO ReturnTmp
+           (
+           [BacklogName]
+           ,[EmpID]
+           ,[BacklogTotal]
+           ,[IsRepeated]
+           ,[RepeatedMounts]
+           ,[RM_Remaining]
+           ,[Notes]
+           ,[UserID]
+           ,[CreateDate]
+           ,[LastModify]
+           ,[ControlID]
+           ,[ExpTax]
+           )
+     select
+          
+           @BacklogName
+           ,SalaryRecords.EmpID
+           ,case when @Ispercent=1 then CEILING(SalaryRecords.SlitSalary*@BacklogTotal/100) else @BacklogTotal end 
+           ,@IsRepeated
+           ,@RepeatedMounts
+           ,@RM_Remaining
+           ,@Notes
+           ,@UserID
+           ,GETDATE()
+           ,GETDATE()
+           ,@ControlID
+           ,@ExpTax
+           
+from SalaryRecords
+
+INSERT INTO [SalaryLatDB].[dbo].[BacklogReturn]
+           ([BacklogRID]
+           ,[BacklogName]
+           ,[EmpID]
+           ,[BacklogTotal]
+           ,[IsRepeated]
+           ,[RepeatedMounts]
+           ,[RM_Remaining]
+           ,[Notes]
+           ,[UserID]
+           ,[CreateDate]
+           ,[LastModify]
+           ,[ControlID]
+           ,[ExpTax])
+     SELECT
+           ReturnTmp.BacklogRID
+           ,ReturnTmp.BacklogName
+           ,ReturnTmp.EmpID
+           ,ReturnTmp.BacklogTotal
+           ,ReturnTmp.IsRepeated
+           ,ReturnTmp.RepeatedMounts
+           ,ReturnTmp.RM_Remaining
+           ,ReturnTmp.Notes
+           ,ReturnTmp.UserID
+           ,ReturnTmp.CreateDate
+           ,ReturnTmp.LastModify
+           ,ReturnTmp.ControlID
+           ,ReturnTmp.ExpTax
+FROM ReturnTmp
+END
+</Value>
+    </Setting>
+    <Setting Name="BaniasEnergyDBConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;
+  &lt;ConnectionString&gt;Data Source=ramitta;Initial Catalog=SalaryLatDB;User ID=Sa;Password=microsoft@1976&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=ramitta;Initial Catalog=SalaryLatDB;User ID=Sa;Password=microsoft@1976</Value>
+    </Setting>
+    <Setting Name="ConnectionSqlMaster" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;
+  &lt;ConnectionString&gt;Data Source=WIN-O7R3FJDV768;Initial Catalog=master;Integrated Security=True&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=WIN-O7R3FJDV768;Initial Catalog=master;Integrated Security=True</Value>
+    </Setting>
+    <Setting Name="PortCOnnection" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"&gt;
+  &lt;ConnectionString&gt;Data Source=WIN-O7R3FJDV768;Initial Catalog=SalaryLatDB;Persist Security Info=True;User ID=sa;Password=latakiaport@2017&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;System.Data.SqlClient&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=WIN-O7R3FJDV768;Initial Catalog=SalaryLatDB;Persist Security Info=True;User ID=sa;Password=latakiaport@2017</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
